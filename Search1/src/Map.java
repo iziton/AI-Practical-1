@@ -40,24 +40,4 @@ public class Map {
         }
     }
 
-    public static void main(String[] args) {
-        int[][] map0 = new int[][]{
-                {2, 5, 5, 10},
-                {5, 0, 5, 10},
-                {5, 5, 0, 5},
-                {10, 10, 5, 8}
-        };
-
-        Map map = new Map(map0);
-        map.getPoints();
-
-        for (int i = 0; i <map.getPoints().size() ; i++) {
-            Point current = map.getPoints().get(i);
-            System.out.println("name "+current.getName());
-            System.out.println("is goal "+ current.isGoal());
-            System.out.println("is initial "+current.isInitial());
-            System.out.println("Connected points "+current.getConnectedPoints().size());
-
-        }
-    }
 }
